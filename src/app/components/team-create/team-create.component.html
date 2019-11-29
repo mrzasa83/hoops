@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+  <div class="col-md-4 register-team">
+    <!-- form card register -->
+    <div class="card-body">
+      <form [formGroup]="teamForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="nameInput">Name</label>
+          <input class="form-control" type="text" formControlName="name">
+          <!-- error -->
+          <div class="invalid-feedback" *ngIf="submitted && myForm.name.errors?.required">
+            Name is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputColor">Color</label>
+          <select class="custom-select form-control" (change)="updateColor($event.target.value)"
+            formControlName="color">
+            <option value="">Choose...</option>
+            <option *ngFor="let teamColor of TeamColor" value="{{teamColor}}">{{teamColor}}
+            </option>
+          </select>
+          <!-- error -->
+          <div class="invalid-feedback" *ngIf="submitted && myForm.color.errors?.required">
+            Choose color.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-success btn-lg btn-block" type="submit">Register</button>
+        </div>
+      </form>
+
+    </div>
+  </div><!-- form card register -->
+</div>
