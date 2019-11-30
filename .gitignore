@@ -1,4 +1,4 @@
-backend/database/db.js
+//backend/database/db.js
 backend/node_modules
 backend/package-lock.json
 node_modules
