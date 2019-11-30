@@ -1,21 +1,21 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "A MEAN Stack CRUD app for employee management",
+  "description": "A MEAN Stack CRUD app for data management",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Digamber",
+  "author": "Mrzasa",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "mongoose": "^5.5.2"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.13"
   },
   "devDependencies": {
-    "nodemon": "^1.18.11"
+    "nodemon": "^2.0.1"
   }
 }
